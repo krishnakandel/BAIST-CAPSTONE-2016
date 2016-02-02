@@ -10,7 +10,14 @@ public class Class1
 {
 	public Class1()
 	{
-		//
+        Member AuthenticatedMember;
+        AuthenticatedMember = new Member();
+
+        Users UserManager;
+        UserManager = new Users();
+
+        AuthenticatedMember = UserManager.GetUser(UserName, Password);
+        return AuthenticatedMember;	//
 		// TODO: Add constructor logic here
 		//
 	}
